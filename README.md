@@ -1,6 +1,6 @@
-# Dev Memes - RapidAPI
+# Memes API Generator 🤣
 
-A programming Memes Images using Rapid API, React, Vite and Tailwind CSS
+This is a simple project that consumes the [Meme_Api](httpsgithub.comD3vdMeme_Api) and displays the results in a simple and clean way.
 
 <!-- BUILD WITH -->
 
@@ -10,18 +10,17 @@ This project was developed using
 
 [![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black)](https://www.w3schools.com/whatis/whatis_react.asp)
 [![Tailwind](https://img.shields.io/badge/Tailwind%20CSS-06B6D4.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white)](https://vitejs.dev/)
 
 <!-- CONTENT -->
 
 ## Content 🚦
 
-This project was born as part of my effort to learn how to consume an API. In this case, how to consume Rapid API's.
+This project was born as part of my effort to learn how to consume an API. I used the [Meme_Api](httpsgithub.comD3vdMeme_Api).
 
-[Repo](https://github.com/JuanPabloDiaz/devMemes-RapidAPI)
+[Repo](https://github.com/JuanPabloDiaz/meme_Api)
 
-[My Demo](https://memes.jpdiaz.dev/)
-
-[Programming Memes Images](https://memes.semanticerror.com/)
+[Demo](https://meme.jpdiaz.dev/)
 
 <!-- LICENSE -->
 
@@ -47,8 +46,6 @@ For more information regarding my completed courses and certificates, please cli
 
 Resources list that I find helpful and would like to give credit to.
 
-- [Rapid API](https://rapidapi.com/)
-- [Rapid API - Programming Memes Images](https://rapidapi.com/kaushalsharma880-GAglnDIvTy/api/programming-memes-images)
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
