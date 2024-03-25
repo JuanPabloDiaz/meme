@@ -1,18 +1,18 @@
-# meme_Api Contributing Guidelines
+# meme Contributing Guidelines
 
 ## Getting Started
 
-1. [Fork](https://github.com/JuanPabloDiaz/meme_Api/fork) the repository on GitHub.
+1. [Fork](https://github.com/JuanPabloDiaz/meme/fork) the repository on GitHub.
 2. Clone the forked repository to your local machine.
 
    ```sh
-   git clone https://github.com/<your_github_username>/meme_Api.git
+   git clone https://github.com/<your_github_username>/meme.git
    ```
 
 3. Get into the root directory
 
    ```sh
-   cd meme_Api
+   cd meme
    ```
 
 4. Install all the dependencies
