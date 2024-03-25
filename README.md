@@ -18,9 +18,11 @@ This project was developed using
 
 This project was born as part of my effort to learn how to consume an API. I used the [Meme_Api](httpsgithub.comD3vdMeme_Api).
 
-[Repo](https://github.com/JuanPabloDiaz/meme_Api)
-
 [Demo](https://meme.jpdiaz.dev/)
+
+### Lighthouse Score 🚀
+
+<img src="./src/assets/images/lighthouse.png" />
 
 ## How to Contribute?
 
@@ -30,7 +32,7 @@ All contributions are welcome. Please read the [CONTRIBUTING guidelines](CONTRIB
 
 ## License 📜
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License.
 
 <!-- RELATED PROJECTS -->
 
