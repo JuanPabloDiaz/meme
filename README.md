@@ -22,6 +22,10 @@ This project was born as part of my effort to learn how to consume an API. I use
 
 [Demo](https://meme.jpdiaz.dev/)
 
+## How to Contribute?
+
+All contributions are welcome. Please read the [CONTRIBUTING guidelines](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+
 <!-- LICENSE -->
 
 ## License 📜
