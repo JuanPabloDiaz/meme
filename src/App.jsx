@@ -16,18 +16,44 @@ function App() {
       });
   }, []);
 
+  const startYear = 2023;
+  const currentYear = new Date().getFullYear();
+  const yearText =
+    startYear === currentYear ? startYear : `${startYear} - ${currentYear}`;
+  const developer = "Juan Díaz";
+
   return (
     <>
       <Layout>
-        <div className="flex flex-col items-center justify-center  pb-2">
+        <div className="flex min-h-screen flex-col items-center justify-center pb-2">
           <div className="text-center">
             <h1 className="mb-4 text-4xl font-bold md:text-6xl">Meme API</h1>
             <p className="p-2 text-xl md:text-2xl">Random meme generator</p>
           </div>
           <div className="grid-row grid w-full max-w-screen-sm justify-center gap-4 sm:grid-cols-2 md:max-w-screen-md md:grid-cols-3 lg:max-w-screen-lg xl:max-w-screen-xl">
             {meme.map((item) => (
-              <img src={item.url} alt={item.title} className=" rounded-lg" />
+              <img
+                key={item.title}
+                src={item.url}
+                alt={item.title}
+                className=" rounded-lg"
+              />
             ))}
+          </div>
+          <div className="py-4 text-center">
+            © {yearText}
+            <span className="mx-1">•</span>
+            Developed by
+            <a
+              href="http://jpdiaz.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Website developed by ${developer}`}
+              className="pl-1 font-bold hover:underline hover:underline-offset-4"
+            >
+              {" "}
+              {developer}
+            </a>
           </div>
         </div>
       </Layout>
