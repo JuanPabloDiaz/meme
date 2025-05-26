@@ -231,9 +231,9 @@ function App() {
 
                         {/* Title */}
                         <div className="space-y-2 min-h-[53px] sm:min-h-[58px]">
-                          <h3 className="text-slate-200 font-semibold text-xs sm:text-sm leading-tight line-clamp-2 group-hover:text-cyan-300 transition-colors duration-300">
+                          <h2 className="text-slate-200 font-semibold text-xs sm:text-sm leading-tight line-clamp-2 group-hover:text-cyan-400 transition-colors duration-200 min-h-[32px] sm:min-h-[36px] md:min-h-[40px]">
                             {item.title}
-                          </h3>
+                          </h2>
                           
                           {/* Subreddit info */}
                           <div className="flex items-center justify-between text-xs">
