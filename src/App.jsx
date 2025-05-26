@@ -214,10 +214,10 @@ function App() {
                         {/* Image container */}
                         <div className="relative overflow-hidden rounded-xl bg-slate-900 h-40 sm:h-auto sm:aspect-square mb-3 sm:mb-4">
                           <img
-                            src={item.url}
+                            src={item.preview && item.preview.length > 1 ? item.preview[1] : (item.preview && item.preview.length > 0 ? item.preview[0] : item.url)}
                             alt={item.title}
                             className="w-full h-full object-contain transition-transform duration-300 ease-in-out group-hover:scale-105"
-                            loading="lazy"
+                            loading={index < 2 ? undefined : 'lazy'}
                             onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x400/1A202C/CBD5E0?text=Meme%20Not%20Available&font=montserrat'; }}
                           />
                           {/* Overlay gradient */}
