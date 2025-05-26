@@ -100,7 +100,7 @@ function App() {
         <Layout>
           <div className="flex min-h-screen flex-col items-center justify-center text-center px-4">
             <div className="mb-8">
-              <h1 className="mb-6 text-5xl font-bold md:text-7xl bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <h1 className="mb-4 text-4xl font-bold sm:text-5xl md:text-7xl bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Meme API
               </h1>
               <div className="flex items-center justify-center space-x-2 text-cyan-300">
@@ -132,7 +132,7 @@ function App() {
         <Layout>
           <div className="flex min-h-screen flex-col items-center justify-center text-center px-4">
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 shadow-2xl">
-              <h1 className="mb-6 text-4xl font-bold md:text-6xl bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">
+              <h1 className="mb-4 text-3xl font-bold sm:text-4xl md:text-6xl bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">
                 Oops! Something went wrong
               </h1>
               <p className="p-4 text-lg md:text-xl text-red-300 bg-red-900/20 rounded-lg border border-red-800 mb-6">
@@ -157,10 +157,10 @@ function App() {
       <Layout>
         <div className="flex min-h-screen flex-col items-center justify-center pb-8 px-4">
           <div className="text-center mb-12">
-            <h1 className="mb-6 text-5xl font-bold md:text-7xl bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h1 className="mb-4 text-4xl font-bold sm:text-5xl md:text-7xl bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
               Meme API
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 font-medium">
+            <p className="text-lg sm:text-xl md:text-2xl text-slate-300 font-medium">
               Random meme generator
             </p>
             <div className="mt-4 h-1 w-32 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full mx-auto"></div>
@@ -211,15 +211,16 @@ function App() {
                       <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 rounded-2xl blur opacity-20 group-hover:opacity-60 transition duration-500"></div>
                       
                       {/* Main card */}
-                      <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-4 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-cyan-500/10">
+                      <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-3 sm:p-4 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-cyan-500/10">
                         
                         {/* Image container */}
-                        <div className="relative overflow-hidden rounded-xl bg-slate-900 aspect-square mb-4">
+                        <div className="relative overflow-hidden rounded-xl bg-slate-900 h-40 sm:h-auto sm:aspect-square mb-3 sm:mb-4">
                           <img
                             src={item.url}
                             alt={item.title}
                             className="w-full h-full object-contain transition-transform duration-300 ease-in-out group-hover:scale-105"
                             loading="lazy"
+                            onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x400/1A202C/CBD5E0?text=Meme%20Not%20Available&font=montserrat'; }}
                           />
                           {/* Overlay gradient */}
                           <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -231,8 +232,8 @@ function App() {
                         </div>
 
                         {/* Title */}
-                        <div className="space-y-2 min-h-[58px]">
-                          <h3 className="text-slate-200 font-semibold text-sm leading-tight line-clamp-2 group-hover:text-cyan-300 transition-colors duration-300">
+                        <div className="space-y-2 min-h-[53px] sm:min-h-[58px]">
+                          <h3 className="text-slate-200 font-semibold text-xs sm:text-sm leading-tight line-clamp-2 group-hover:text-cyan-300 transition-colors duration-300">
                             {item.title}
                           </h3>
                           
