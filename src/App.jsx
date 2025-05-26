@@ -231,7 +231,7 @@ function App() {
                         </div>
 
                         {/* Title */}
-                        <div className="space-y-2">
+                        <div className="space-y-2 min-h-[58px]">
                           <h3 className="text-slate-200 font-semibold text-sm leading-tight line-clamp-2 group-hover:text-cyan-300 transition-colors duration-300">
                             {item.title}
                           </h3>
